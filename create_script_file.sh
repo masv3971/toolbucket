@@ -4,7 +4,7 @@
 script_name=$1
 
 if [[ ! $script_name ]]; then
-    echo "You need do state a new. I can't guess, sadly..."
+    echo "You need do state a filename. I can't guess, sadly..."
     exit 0
 fi
 
