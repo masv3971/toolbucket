@@ -28,8 +28,7 @@ elif  [[ $script_ending == "pl" ]]; then
 
 elif  [[ $script_ending == "sh" ]]; then
     echo "#!/bin/bash" > $script_name
+    echo "set -u" > $script_name
 fi
-
-echo -e "#\n# \$Id\$\n# \$HeadURL\$\n#" >> $script_name
 
 vim $script_name
